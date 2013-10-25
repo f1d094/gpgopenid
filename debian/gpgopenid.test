@@ -9,8 +9,8 @@
 	</Proxy>
 
 	# pgpopenid listens by default on 127.0.0.1 port 8000/tcp
-	ProxyPass /pgpid http://127.0.0.1:8000/
-	ProxyPassReverse /pgpid http://127.0.0.1:8000/
+	ProxyPass /gpgid http://127.0.0.1:8000/
+	ProxyPassReverse /gpgid http://127.0.0.1:8000/
 </IfModule>
 
 
