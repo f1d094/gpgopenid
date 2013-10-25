@@ -1,0 +1,16 @@
+Source: gpgopenid
+Section: web
+Priority: optional
+Maintainer: Richard Ulrich <richi@paraeasy.ch>
+Build-Depends: debhelper (>= 9.0.0), libapache2-mod-auth-openpgp, python-openid
+Standards-Version: 3.9.4
+Homepage: https://github.com/ulrichard/gpgopenid
+
+Package: gpgopenid
+Architecture: any
+Depends: ${python:Depends}, ${misc:Depends}, libapache2-mod-auth-openpgp, python-openid
+Description: openid provider backed by your opengpg key.
+ An OpenId identity provider that verifies your identity through your openpgp key.
+ Works well with OpenPGP SmartCards such as the CryptoStick.
+ In your browser you need to install EnigForm that talks to gnupg.
+ On the server, mod_openpgp verifies the digital signature of the http header.

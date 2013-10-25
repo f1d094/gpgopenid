@@ -1,0 +1,2 @@
+gpgopenid.py          /usr/bin
+debian/gpgopenid.test /etc/apache2/sites-available

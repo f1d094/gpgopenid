@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Grab the version from the changelog, up to the first -
+DEB_DEBIAN_DIR=$(dir $(firstword $(MAKEFILE_LIST)))
+DEB_UPSTREAM_VERSION=$(shell dpkg-parsechangelog -l$(DEB_DEBIAN_DIR)/changelog \
+                               | sed -rne 's,^Version: ([^-]+).*,\1,p')
+DEB_UPSTREAM_VERSFMT=$(shell echo ${DEB_UPSTREAM_VERSION} | sed -e "s/\./_/g")
+
+%:
+	dh $@ --with python2
+
+
+

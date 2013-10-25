@@ -1,0 +1,6 @@
+gpgopenid (0.1~raring1) raring; urgency=low
+
+  * Initial packaging for Debian (Closes: #)
+
+ -- Richard Ulrich <richi@paraeasy.ch>  Thu, 24 Oct 2013 21:32:27 +0200
+
